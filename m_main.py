@@ -17,4 +17,28 @@ print("===================")
 
 # func.m10("멜론 10")
 # func.m000("멜론 내맘데로 출력", 7)
-func.m_random("노래추천 기능")
+# func.m_random("노래추천 기능")
+
+# func.m_save_csv("파일에 저장(멜론100)")
+
+choice = input("원하는 기능을 선택하세요: ")
+
+if choice == '1':
+    func.m100("멜론 100 차트")
+elif choice == '2':
+    func.m50("멜론 50 차트")
+elif choice == '3':
+    func.m10("멜론 10 차트")
+elif choice == '4':
+    func.m_random("AI 추천 노래 기능")
+elif choice == '5':
+    print("[가수 이름 검색 기능은 현재 준비 중입니다.]")
+    print("===================")
+elif choice == '6':
+    # Call the new m_save_csv function
+    func.m_save_csv("멜론 100 차트를 CSV 파일로 저장")
+elif choice == '0':
+    print("[프로그램을 종료합니다.]")
+else:
+    print("[잘못된 입력입니다. 1, 2, 3, 4, 5, 6 또는 0을 입력하세요.]")
+    print("===================")
